@@ -15,6 +15,7 @@
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
     "@tailwindcss/vite": "^4.1.7",
+    "daisyui": "^5.0.35",
     "framer-motion": "^12.11.4",
     "lucide-react": "^0.510.0",
     "pdfjs-dist": "^3.11.174",
