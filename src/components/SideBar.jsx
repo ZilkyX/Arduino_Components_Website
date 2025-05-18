@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, Palette } from "lucide-react";
+import { Atom, ChevronDown, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -261,21 +261,16 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-base-200 text-base-content z-40 transform transition-transform duration-300 ease-in-out
-      ${isMobileOpen ? "translate-x-0" : "-translate-x-full"}
-      lg:translate-x-0 flex flex-col justify-between`}
+        className={`fixed overflow-y-auto top-0 left-0 h-full w-64 bg-base-200 text-base-content z-40 transform transition-transform duration-300 ease-in-out lg:translate-x-0 flex flex-col justify-between`}
       >
         <div>
           <div className="flex items-center justify-between p-4">
             <Link to={"/"}>
-              <h1 className="text-xl font-bold text-base-content">App Title</h1>
+              <h1 className="flex text-xl font-bold text-base-content">
+                <Atom className="mr-2" />
+                Arduino Kit
+              </h1>
             </Link>
-            <button
-              className="btn btn-sm btn-ghost lg:hidden"
-              onClick={() => setIsMobileOpen(false)}
-            >
-              ✕
-            </button>
           </div>
 
           <div className="p-4 space-y-1">
@@ -336,14 +331,6 @@ const Sidebar = () => {
           </div>
         </Link>
       </div>
-
-      {isMobileOpen && (
-        <div
-          className="fixed inset-0 bg-base-300/50 z-30 lg:hidden"
-          onClick={() => setIsMobileOpen(false)}
-          aria-hidden="true"
-        />
-      )}
     </>
   );
 };

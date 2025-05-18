@@ -68,7 +68,7 @@ const Arduino = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/videos/1. Arduino Uno R3.mp4"
+            src="/src/assets/3D Video/Arduino Uno R3.mp4"
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.

@@ -1,5 +1,5 @@
 import SideBar from "./components/SideBar";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import SettingsPage from "./pages/SettingsPage";
 import { useThemeStore } from "./store/useThemeStore";
 import Hompage from "./pages/Hompage";
@@ -42,11 +42,14 @@ import ShiftRegister74HC595 from "./pages/passive-components/ShiftRegister";
 
 const App = () => {
   const { theme } = useThemeStore();
+  const location = useLocation();
+
+  const isHomePage = location.pathname === "/";
 
   return (
     <div data-theme={theme}>
-      <SideBar />
-      <main className="px-4 lg:pl-64 min-h-screen ">
+      {!isHomePage && <SideBar />}
+      <main className={`px-4 min-h-screen ${!isHomePage ? "lg:pl-64" : ""}`}>
         <Routes>
           <Route path="/" element={<Hompage />} />
           <Route path="/settings" element={<SettingsPage />} />
