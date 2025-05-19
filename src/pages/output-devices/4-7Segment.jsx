@@ -89,11 +89,11 @@ const FourDigitTube = () => {
         </button>
         <div
           ref={viewerRef}
-          className="w-full h-96 bg-secondary rounded-lg shadow-md"
+          className="w-full h-96 bg-black rounded-lg shadow-md"
         >
           <Canvas camera={{ position: [0, 0, 3], fov: 1 }}>
             <ambientLight intensity={0.5} />
-            <directionalLight position={[5, 5, 5]} intensity={1} />
+            <directionalLight position={[5, 5, 5]} intensity={10} />
             <Suspense
               fallback={
                 <Html center>

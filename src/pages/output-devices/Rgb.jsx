@@ -12,10 +12,10 @@ const Model = ({ modelPath }) => {
 };
 
 const RGBModule = () => {
-  const modelUrl = "/src/assets/models/12. RGB MODULE.gltf";        
-  const pdfUrl = "/src/assets/pdfs/RGB.pdf";          
-  const imageUrl = "/src/assets/images/rgb.jpeg";            
-  const videoUrl = "/src/assets/videos/12. RGB Module.mp4";            
+  const modelUrl = "/src/assets/models/12. RGB MODULE.gltf";
+  const pdfUrl = "/src/assets/pdfs/RGB.pdf";
+  const imageUrl = "/src/assets/images/rgb.jpeg";
+  const videoUrl = "/src/assets/videos/12. RGB Module.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -46,8 +46,9 @@ const RGBModule = () => {
         <div className="lg:w-1/2">
           <h1 className="text-3xl font-semibold mb-4">RGB Module Overview</h1>
           <p className="text-base">
-            The RGB Module contains Red, Green, and Blue LEDs combined into a single package. 
-            It’s used in projects where color mixing and lighting effects are required.
+            The RGB Module contains Red, Green, and Blue LEDs combined into a
+            single package. It’s used in projects where color mixing and
+            lighting effects are required.
           </p>
         </div>
         <div className="lg:w-1/2">
@@ -74,7 +75,9 @@ const RGBModule = () => {
       </section>
 
       <section className="bg-content-base p-6 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">3D Viewer (Rotate Model)</h2>
+        <h2 className="text-2xl font-semibold mb-4">
+          3D Viewer (Rotate Model)
+        </h2>
         <button
           onClick={toggleFullscreen}
           className="mb-4 px-4 py-2 bg-secondary text-secondary-content rounded hover:opacity-50 transition"
@@ -83,7 +86,7 @@ const RGBModule = () => {
         </button>
         <div
           ref={viewerRef}
-          className="w-full h-96 bg-secondary rounded-lg shadow-md"
+          className="w-full h-96 bg-black rounded-lg shadow-md"
         >
           <Canvas camera={{ position: [0, 0, 3], fov: 5 }}>
             <ambientLight intensity={0.5} />
@@ -107,9 +110,13 @@ const RGBModule = () => {
       </section>
 
       <section className="bg-content-base p-6 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-4">RGB Module Datasheet (PDF Viewer)</h2>
+        <h2 className="text-2xl font-semibold mb-4">
+          RGB Module Datasheet (PDF Viewer)
+        </h2>
         <div className="h-[500px] border rounded shadow-md overflow-hidden">
-          <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
+          <Worker
+            workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}
+          >
             <Viewer fileUrl={pdfUrl} plugins={[defaultLayoutPluginInstance]} />
           </Worker>
         </div>
