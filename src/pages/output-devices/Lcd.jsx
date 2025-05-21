@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const LCD16x2 = () => {
   const modelUrl = "/src/assets/models/3. LCD 1602.gltf";
-  const pdfUrl = "/src/assets/pdfs/LCD.pdf";
+  const pdfUrl = "/src/assets/PDF/LIQUID-CRYSTAL-DISPLAY.pdf";
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 

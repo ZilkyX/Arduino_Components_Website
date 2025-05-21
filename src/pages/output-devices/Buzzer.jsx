@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const Buzzer = () => {
   const modelUrl = "/src/assets/models/26. BUZZER.gltf";
-  const pdfUrl = "/src/assets/pdfs/buzzer.pdf";
+  const pdfUrl = "/src/assets/PDF/ACTIVE BUZZER.pdf";
   const imageUrl = "/src/assets/images/AD319-2.webp";
   const videoUrl = "/src/assets/3D Video/Buzzer.mp4";
 

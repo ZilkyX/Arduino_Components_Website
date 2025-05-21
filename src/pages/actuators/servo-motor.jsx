@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const ServoMotor = () => {
   const modelUrl = "/src/assets/models/25. SERVO MOTOR.gltf";
-  const pdfUrl = "/src/assets/pdfs/servo-motor.pdf";
+  const pdfUrl = "/src/assets/PDF/SERVO MOTOR.pdf";
   const imageUrl = "/src/assets/images/201902061139001202.jpg";
   const videoUrl = "/src/assets/3D Video/Servo Motor.mp4";
 

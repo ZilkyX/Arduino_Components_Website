@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const RC522 = () => {
   const modelUrl = "/src/assets/models/4. RC522.gltf";
-  const pdfUrl = "/src/assets/pdfs/RC522.pdf";
+  const pdfUrl = "/src/assets/PDF/RC522.pdf";
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 

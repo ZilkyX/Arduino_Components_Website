@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const RelayModule = () => {
   const modelUrl = "/src/assets/models/15. CHANNEL MODULE.gltf";
-  const pdfUrl = "/src/assets/pdfs/1Ch-relay.pdf";
+  const pdfUrl = "/src/assets/PDF/ONE CHANNEL RELAY MODULE.pdf";
   const imageUrl =
     "/src/assets/images/A85128_1-CHANNEL-RELAY-BOARD-WITHOUT-OPTO-5V_3.webp";
   const videoUrl = "/src/assets/3D Video/Channel Module.mp4";

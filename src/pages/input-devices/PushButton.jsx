@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const PushButton = () => {
   const modelUrl = "/src/assets/models/29. SWITCH W CAP.gltf";
-  const pdfUrl = "/src/assets/pdfs/Push-Button.pdf";
+  const pdfUrl = "/src/assets/PDF/PUSH BUTTON SWITCH.pdf";
   const imageUrl = "/src/assets/images/SF-COM-09190.jpg";
   const videoUrl = "/src/assets/3D Video/Push Button.mp4";
 

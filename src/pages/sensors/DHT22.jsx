@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const HumiditySensor = () => {
   const modelUrl = "/src/assets/models/11. HUMID SENSOR.gltf";
-  const pdfUrl = "/src/assets/pdfs/DHT11.pdf";
+  const pdfUrl = "/src/assets/PDF/DHT11-TEMPERATURE-SENSOR.pdf";
   const imageUrl = "/src/assets/images/DHT11.jpg.webp";
   const videoUrl = "/src/assets/3D Video/Humidity Sensor.mp4";
 

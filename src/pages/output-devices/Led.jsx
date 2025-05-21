@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const LED = () => {
   const modelUrl = "/src/assets/models/31. LED LIGHTS.gltf";
-  const pdfUrl = "/src/assets/pdfs/led.pdf";
+  const pdfUrl = "/src/assets/PDF/LIGHT EMITTING DIODE.pdf";
   const videoUrl = "/src/assets/3D Video/LED.mp4";
 
   const viewerRef = useRef(null);

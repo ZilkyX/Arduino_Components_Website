@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const RGBModule = () => {
   const modelUrl = "/src/assets/models/12. RGB MODULE.gltf";
-  const pdfUrl = "/src/assets/pdfs/RGB.pdf";
+  const pdfUrl = "/src/assets/PDF/RGB MODULE.pdf";
   const imageUrl = "/src/assets/images/rgb.jpeg";
   const videoUrl = "/src/assets/3D Video/RGB Module.mp4";
 

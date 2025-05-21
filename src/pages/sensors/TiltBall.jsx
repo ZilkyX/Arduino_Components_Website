@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const TiltBallSwitch = () => {
   const modelUrl = "/src/assets/models/27. TILT BALL SWITCH.gltf";
-  const pdfUrl = "/src/assets/pdfs/tilt-sensor.pdf";
+  const pdfUrl = "/src/assets/PDF/TILT BALL SWITCH.pdf";
   const imageUrl = "/src/assets/images/0_Zw2YeCvUoiIJSmJ-.jpg";
   const videoUrl = "/src/assets/3D Video/Tilt Ball Switch.mp4";
 

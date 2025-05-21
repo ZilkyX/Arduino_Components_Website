@@ -1,6 +1,10 @@
 import React, { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Html } from "@react-three/drei";
+import { Worker, Viewer } from "@react-pdf-viewer/core";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 const Model = ({ modelPath }) => {
   const { scene } = useGLTF(modelPath);
@@ -11,6 +15,7 @@ const RemoteControl = () => {
   const modelUrl = "/src/assets/models/20. REMOTE.gltf";
   const imageUrl = "/src/assets/images/IR-Remote.jpg";
   const videoUrl = "/src/assets/3D Video/Remote.mp4";
+  const pdfUrl = "/src/assets/PDF/REMOTE.pdf";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -32,6 +37,8 @@ const RemoteControl = () => {
       document.removeEventListener("fullscreenchange", handleFullscreenChange);
     };
   }, []);
+
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   return (
     <main className="max-w-5xl mx-auto p-6 space-y-12 bg-base text-base rounded-lg shadow-md">
@@ -74,7 +81,6 @@ const RemoteControl = () => {
         <h2 className="text-2xl font-semibold mb-4">
           3D Viewer (Rotate Model)
         </h2>
-
         <button
           onClick={toggleFullscreen}
           className="mb-4 px-4 py-2 bg-secondary text-secondary-content rounded hover:opacity-50 transition"
@@ -103,6 +109,19 @@ const RemoteControl = () => {
               maxPolarAngle={Math.PI / 2}
             />
           </Canvas>
+        </div>
+      </section>
+
+      <section className="bg-content-base p-6 rounded-lg">
+        <h2 className="text-2xl font-semibold mb-4">
+          Remote Control Datasheet (PDF Viewer)
+        </h2>
+        <div className="h-[500px] border rounded shadow-md overflow-hidden">
+          <Worker
+            workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}
+          >
+            <Viewer fileUrl={pdfUrl} plugins={[defaultLayoutPluginInstance]} />
+          </Worker>
         </div>
       </section>
     </main>

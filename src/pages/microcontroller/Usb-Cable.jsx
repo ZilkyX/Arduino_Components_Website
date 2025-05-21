@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const USBCable = () => {
   const modelUrl = "/src/assets/models/2. USB CABLE.gltf";
-  const pdfUrl = "/src/assets/PDF/USB-CABLE.pdff";
+  const pdfUrl = "/src/assets/PDF/USB-CABLE.pdf";
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 

@@ -1,6 +1,11 @@
 import React, { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Html } from "@react-three/drei";
+import { Viewer, Worker } from "@react-pdf-viewer/core";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 const Model = ({ modelPath }) => {
   const { scene } = useGLTF(modelPath);
@@ -9,12 +14,17 @@ const Model = ({ modelPath }) => {
 
 const Keychain = () => {
   const modelUrl = "/src/assets/models/6. KEYCHAIN.gltf";
+  const videoUrl = "/src/assets/3D Video/Keychain.mp4";
+  const imageUrl = "/src/assets/images/Keychain.jpg";
+  const pdfUrl = "/assets/pdfs/Keychain_Info.pdf";
+
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
-      viewerRef.current?.requestFullscreen();
+      viewerRef.current?.requestFullscreen?.();
     } else {
       document.exitFullscreen?.();
     }
@@ -46,7 +56,7 @@ const Keychain = () => {
         </div>
         <div className="lg:w-1/2">
           <img
-            src="/src/assets/images/Keychain.jpg"
+            src={imageUrl}
             alt="Keychain RFID Tag"
             className="rounded-lg shadow-md max-w-full h-auto"
           />
@@ -59,7 +69,7 @@ const Keychain = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/3D Video/Keychain.mp4"
+            src={videoUrl}
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.
@@ -99,6 +109,15 @@ const Keychain = () => {
               maxPolarAngle={Math.PI / 2}
             />
           </Canvas>
+        </div>
+      </section>
+
+      <section className="bg-content-base p-6 rounded-lg">
+        <h2 className="text-2xl font-semibold mb-4">Documentation (PDF)</h2>
+        <div className="h-[600px] border rounded shadow-md overflow-hidden">
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+            <Viewer fileUrl={pdfUrl} plugins={[defaultLayoutPluginInstance]} />
+          </Worker>
         </div>
       </section>
     </main>

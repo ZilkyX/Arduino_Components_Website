@@ -1,6 +1,11 @@
 import React, { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Html } from "@react-three/drei";
+import { Viewer, Worker } from "@react-pdf-viewer/core";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 const Model = ({ modelPath }) => {
   const { scene } = useGLTF(modelPath);
@@ -11,19 +16,17 @@ const Keyboard = () => {
   const modelUrl = "/src/assets/models/8. KEYBOARD.gltf";
   const imageUrl = "/src/assets/images/61AuZ42A0hL._AC_UF894,1000_QL80_.jpg";
   const videoUrl = "/src/assets/3D Video/Keyboard.mp4";
+  const pdfUrl = "/src/assets/PDF/KEYBOARD-MODULE.pdf";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
-      if (viewerRef.current.requestFullscreen) {
-        viewerRef.current.requestFullscreen();
-      }
+      viewerRef.current?.requestFullscreen?.();
     } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
+      document.exitFullscreen?.();
     }
   };
 
@@ -106,6 +109,15 @@ const Keyboard = () => {
               maxPolarAngle={Math.PI / 2}
             />
           </Canvas>
+        </div>
+      </section>
+
+      <section className="bg-content-base p-6 rounded-lg">
+        <h2 className="text-2xl font-semibold mb-4">Documentation (PDF)</h2>
+        <div className="h-[600px] border rounded shadow-md overflow-hidden">
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+            <Viewer fileUrl={pdfUrl} plugins={[defaultLayoutPluginInstance]} />
+          </Worker>
         </div>
       </section>
     </main>

@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const FourDigitTube = () => {
   const modelUrl = "/src/assets/models/23. 4DIGIT TUBE.gltf";
-  const pdfUrl = "/src/assets/pdfs/4-digit-7segment.pdf";
+  const pdfUrl = "/src/assets/PDF/4-DIGIT 7-SEGMENT.pdf";
   const imageUrl = "/src/assets/images/FZICZGZIBTF5EDQ.webp";
   const videoUrl = "/src/assets/3D Video/4 Digit 7 Segment.mp4";
 

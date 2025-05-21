@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const IRSensor = () => {
   const modelUrl = "/src/assets/models/34. IRRS.gltf";
-  const pdfUrl = "/src/assets/pdfs/ir-sensor.pdf";
+  const pdfUrl = "/src/assets/PDF/IR RECEIVER.pdf";
   const imageUrl =
     "/src/assets/images/voltaat-ir-receiver-diode-vs1838b-38khz-14301944447078.webp";
   const videoUrl = "/src/assets/3D Video/IR Sensor.mp4";

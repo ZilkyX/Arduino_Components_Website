@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const WaterLevelSensor = () => {
   const modelUrl = "/src/assets/models/10. WATER SENSOR.gltf";
-  const pdfUrl = "/src/assets/pdfs/water level.pdf";
+  const pdfUrl = "/src/assets/PDF/WATER-LEVEL-SENSOR.pdf";
   const imageUrl = "/src/assets/images/Water-Level-Sensor.webp";
   const videoUrl = "/src/assets/3D Video/Water Level.mp4";
 

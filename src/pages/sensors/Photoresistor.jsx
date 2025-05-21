@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const Photoresistor = () => {
   const modelUrl = "/src/assets/models/28. PHOTORES.gltf";
-  const pdfUrl = "/src/assets/pdfs/photoresistor.pdf";
+  const pdfUrl = "/src/assets/PDF/PHOTORESISTOR.pdf";
   const imageUrl = "/src/assets/images/s-l400.jpg";
   const videoUrl = "/src/assets/3D Video/Photoresistor.mp4";
 

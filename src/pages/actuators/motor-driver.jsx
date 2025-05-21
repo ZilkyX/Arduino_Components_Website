@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const MotorDriver = () => {
   const modelUrl = "/src/assets/models/13. Motor Driver.gltf";
-  const pdfUrl = "/src/assets/pdfs/L298N Motor Driver.pdf";
+  const pdfUrl = "/src/assets/PDF/ULN2003 DRIVER MODULE.pdf";
   const imageUrl =
     "/src/assets/images/ULN2003-Driver-Module-Stepper-Motor-Driver-Board-ROBU.IN_.jpg";
   const videoUrl = "/src/assets/3D Video/Motor Driver.mp4";

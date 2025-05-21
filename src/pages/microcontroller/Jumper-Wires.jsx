@@ -1,16 +1,21 @@
 import React, { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Html } from "@react-three/drei";
+import { Worker, Viewer } from "@react-pdf-viewer/core";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 const Model = ({ modelPath }) => {
   const { scene } = useGLTF(modelPath);
   return <primitive object={scene} dispose={null} />;
 };
 
-const JumperWires = () => {
-  const modelUrl = "/src/assets/models/17. JUMPER WIRES.gltf";
-  const imageUrl = "/src/assets/images/R2048241-01.webp";
-  const videoUrl = "/src/assets/PDF/JUMPER WIRE.pdf";
+const FMWires = () => {
+  const modelUrl = "/src/assets/models/18. FM CABLES.gltf";
+  const imageUrl = "/src/assets/images/fm-wires.jpeg";
+  const videoUrl = "/src/assets/videos/fm-wires.mp4";
+  const pdfUrl = "/src/assets/PDF/JUMPER WIRE.pdf";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -33,22 +38,24 @@ const JumperWires = () => {
     };
   }, []);
 
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+
   return (
     <main className="max-w-5xl mx-auto p-6 space-y-12 bg-base text-base rounded-lg shadow-md">
       <section className="flex flex-col lg:flex-row items-center gap-8 bg-content-base p-6 rounded-lg">
         <div className="lg:w-1/2">
-          <h1 className="text-3xl font-semibold mb-4">Jumper Wires Overview</h1>
+          <h1 className="text-3xl font-semibold mb-4">FM Wires Overview</h1>
           <p className="text-base">
-            Jumper wires are flexible electrical wires used for making
-            connections between components on a breadboard or other prototype
-            circuits. They come in various lengths and connector types such as
-            male-to-male, male-to-female, and female-to-female.
+            FM wires are flexible and insulated wires typically used in radio
+            frequency applications, including FM antenna connections and other
+            communication wiring tasks. They provide reliable signal
+            transmission and durability for RF circuits.
           </p>
         </div>
         <div className="lg:w-1/2">
           <img
             src={imageUrl}
-            alt="Jumper Wires"
+            alt="FM Wires"
             className="rounded-lg shadow-md max-w-full h-auto"
           />
         </div>
@@ -72,7 +79,6 @@ const JumperWires = () => {
         <h2 className="text-2xl font-semibold mb-4">
           3D Viewer (Rotate Model)
         </h2>
-
         <button
           onClick={toggleFullscreen}
           className="mb-4 px-4 py-2 bg-secondary text-secondary-content rounded hover:opacity-50 transition"
@@ -103,8 +109,17 @@ const JumperWires = () => {
           </Canvas>
         </div>
       </section>
+
+      <section className="bg-content-base p-6 rounded-lg">
+        <h2 className="text-2xl font-semibold mb-4">FM Wires Manual (PDF)</h2>
+        <div className="h-[600px] overflow-hidden rounded shadow">
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+            <Viewer fileUrl={pdfUrl} plugins={[defaultLayoutPluginInstance]} />
+          </Worker>
+        </div>
+      </section>
     </main>
   );
 };
 
-export default JumperWires;
+export default FMWires;

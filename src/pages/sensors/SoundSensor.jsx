@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const SoundSensor = () => {
   const modelUrl = "/src/assets/models/19. SOUND SENSOR.gltf";
-  const pdfUrl = "/src/assets/pdfs/Sound-Sensor.pdf";
+  const pdfUrl = "/src/assets/PDF/SOUND SENSOR.pdf";
   const imageUrl = "/src/assets/images/sound-sensor-module-430x430.jpg";
   const videoUrl = "/src/assets/3D Video/Sound Sensor.mp4";
 

@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const Resistor = () => {
   const modelUrl = "/src/assets/models/32. RESISTORS.gltf";
-  const pdfUrl = "/src/assets/pdfs/resistor.pdf";
+  const pdfUrl = "/src/assets/PDF/RESISTORS.pdf";
   const imageUrl = "/src/assets/images/resistor.jpg";
   const videoUrl = "/src/assets/3D Video/Resistor.mp4";
 

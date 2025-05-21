@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const LM35DZ = () => {
   const modelUrl = "/src/assets/models/36. LM35DZ.gltf";
-  const pdfUrl = "/src/assets/pdfs/LM35.PDF";
+  const pdfUrl = "/src/assets/PDF/LM35DZ.pdf";
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 

@@ -14,7 +14,7 @@ const Model = ({ modelPath }) => {
 const Battery = () => {
   const modelUrl = "/src/assets/models/30. BATTERY.gltf";
   const imageUrl = "/src/assets/images/battery.webp";
-  const pdfUrl = "/src/assets/pdfs/lithium-bat.pdf";
+  const pdfUrl = "/src/assets/PDF/9V BATTERY CLIP WITH DC JACK.pdf";
   const videoUrl = "/src/assets/3D Video/Battery.mp4";
 
   const viewerRef = useRef(null);

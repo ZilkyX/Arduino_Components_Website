@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const Potentiometer = () => {
   const modelUrl = "/src/assets/models/21. POTENTIOMETER.gltf";
-  const pdfUrl = "/src/assets/pdfs/potentiometer.pdf";
+  const pdfUrl = "/src/assets/PDF/10K POTENTIOMETER.pdf";
   const imageUrl = "/src/assets/images/potentiometer.png";
   const videoUrl = "/src/assets/3D Video/10K Potentiometer.mp4";
 

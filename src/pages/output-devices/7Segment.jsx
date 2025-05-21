@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const OneDigitTube = () => {
   const modelUrl = "/src/assets/models/22. 1DIGIT TUBE.gltf";
-  const pdfUrl = "/src/assets/pdfs/7 Segment Display Datasheet.pdf";
+  const pdfUrl = "/src/assets/PDF/SEVEN SEGMENT.pdf";
   const imageUrl = "/src/assets/images/images.jpg";
   const videoUrl = "/src/assets/3D Video/1 Digit 7 Segment.mp4";
 

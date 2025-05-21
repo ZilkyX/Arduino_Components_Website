@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const Joystick = () => {
   const modelUrl = "/src/assets/models/7. JOYSTICK.gltf";
-  const pdfUrl = "/src/assets/pdfs/Joystick.pdf";
+  const pdfUrl = "/src/assets/PDF/JOYSTICK-MODULE.pdf";
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
