@@ -16,7 +16,7 @@ const MotorDriver = () => {
   const pdfUrl = "/src/assets/pdfs/L298N Motor Driver.pdf";
   const imageUrl =
     "/src/assets/images/ULN2003-Driver-Module-Stepper-Motor-Driver-Board-ROBU.IN_.jpg";
-  const videoUrl = "/src/assets/videos/13. Motor Driver.mp4";
+  const videoUrl = "/src/assets/3D Video/Motor Driver.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

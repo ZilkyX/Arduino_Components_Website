@@ -16,7 +16,7 @@ const RelayModule = () => {
   const pdfUrl = "/src/assets/pdfs/1Ch-relay.pdf";
   const imageUrl =
     "/src/assets/images/A85128_1-CHANNEL-RELAY-BOARD-WITHOUT-OPTO-5V_3.webp";
-  const videoUrl = "/src/assets/videos/15. Channel Module.mp4";
+  const videoUrl = "/src/assets/3D Video/Channel Module.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

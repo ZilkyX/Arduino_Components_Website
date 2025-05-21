@@ -15,7 +15,7 @@ const Photoresistor = () => {
   const modelUrl = "/src/assets/models/28. PHOTORES.gltf";
   const pdfUrl = "/src/assets/pdfs/photoresistor.pdf";
   const imageUrl = "/src/assets/images/s-l400.jpg";
-  const videoUrl = "/src/assets/videos/28. Photoresistor.mp4";
+  const videoUrl = "/src/assets/3D Video/Photoresistor.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

@@ -15,7 +15,7 @@ const PushButton = () => {
   const modelUrl = "/src/assets/models/29. SWITCH W CAP.gltf";
   const pdfUrl = "/src/assets/pdfs/Push-Button.pdf";
   const imageUrl = "/src/assets/images/SF-COM-09190.jpg";
-  const videoUrl = "/src/assets/videos/29. Push Button.mp4";
+  const videoUrl = "/src/assets/3D Video/Push Button.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

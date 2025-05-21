@@ -15,7 +15,7 @@ const ServoMotor = () => {
   const modelUrl = "/src/assets/models/25. SERVO MOTOR.gltf";
   const pdfUrl = "/src/assets/pdfs/servo-motor.pdf";
   const imageUrl = "/src/assets/images/201902061139001202.jpg";
-  const videoUrl = "/src/assets/videos/25. Servo Motor.mp4";
+  const videoUrl = "/src/assets/3D Video/Servo Motor.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

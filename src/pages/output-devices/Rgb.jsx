@@ -15,7 +15,7 @@ const RGBModule = () => {
   const modelUrl = "/src/assets/models/12. RGB MODULE.gltf";
   const pdfUrl = "/src/assets/pdfs/RGB.pdf";
   const imageUrl = "/src/assets/images/rgb.jpeg";
-  const videoUrl = "/src/assets/videos/12. RGB Module.mp4";
+  const videoUrl = "/src/assets/3D Video/RGB Module.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

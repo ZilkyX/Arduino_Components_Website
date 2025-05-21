@@ -10,7 +10,7 @@ const Model = ({ modelPath }) => {
 const Breadboard = () => {
   const modelUrl = "/src/assets/models/16. BREADBOARD.gltf";
   const imageUrl = "/src/assets/images/solderless-breadboard.webp";
-  const videoUrl = "/src/assets/videos/16. Bread Board.mp4";
+  const videoUrl = "/src/assets/PDF/BREADBOARD.pdf";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

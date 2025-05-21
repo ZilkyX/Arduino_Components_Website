@@ -69,7 +69,7 @@ const Joystick = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/videos/7. JOYSTICK.mp4"
+            src="/src/assets/3D Video/Joystick.mp4"
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.

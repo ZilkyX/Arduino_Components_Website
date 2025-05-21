@@ -69,7 +69,7 @@ const LCD16x2 = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/videos/3. LCD 16x2.mp4"
+            src="src/assets/3D Video/LCD 16x2.mp4"
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.

@@ -15,7 +15,7 @@ const FourDigitTube = () => {
   const modelUrl = "/src/assets/models/23. 4DIGIT TUBE.gltf";
   const pdfUrl = "/src/assets/pdfs/4-digit-7segment.pdf";
   const imageUrl = "/src/assets/images/FZICZGZIBTF5EDQ.webp";
-  const videoUrl = "/src/assets/videos/23. 4 Digit 7 Segment.mp4";
+  const videoUrl = "/src/assets/3D Video/4 Digit 7 Segment.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

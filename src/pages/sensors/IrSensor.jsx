@@ -16,7 +16,7 @@ const IRSensor = () => {
   const pdfUrl = "/src/assets/pdfs/ir-sensor.pdf";
   const imageUrl =
     "/src/assets/images/voltaat-ir-receiver-diode-vs1838b-38khz-14301944447078.webp";
-  const videoUrl = "/src/assets/videos/34. IR Sensor.mp4";
+  const videoUrl = "/src/assets/3D Video/IR Sensor.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

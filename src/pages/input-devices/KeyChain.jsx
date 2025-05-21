@@ -59,7 +59,7 @@ const Keychain = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/videos/6. KEYCHAIN.mp4"
+            src="/src/assets/3D Video/Keychain.mp4"
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.

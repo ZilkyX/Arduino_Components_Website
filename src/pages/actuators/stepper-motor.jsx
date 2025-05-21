@@ -15,7 +15,7 @@ const StepperMotor = () => {
   const modelUrl = "/src/assets/models/14. STEPPER MOTOR.gltf";
   const pdfUrl = "/src/assets/pdfs/stepper-motors.pdf";
   const imageUrl = "/src/assets/images/24BYJ48-1.webp";
-  const videoUrl = "/src/assets/videos/14. Stepper Motor.mp4";
+  const videoUrl = "/src/assets/3D Video/Stepper Motor.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

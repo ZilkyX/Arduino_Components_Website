@@ -10,7 +10,7 @@ const Model = ({ modelPath }) => {
 const Keyboard = () => {
   const modelUrl = "/src/assets/models/8. KEYBOARD.gltf";
   const imageUrl = "/src/assets/images/61AuZ42A0hL._AC_UF894,1000_QL80_.jpg";
-  const videoUrl = "/src/assets/videos/8. KEYBOARD.mp4";
+  const videoUrl = "/src/assets/3D Video/Keyboard.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

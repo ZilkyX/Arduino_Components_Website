@@ -69,7 +69,7 @@ const LM35DZ = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/videos/36. LM35DZ.mp4"
+            src="/src/assets/3D Video/LM35DZ.mp4"
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.

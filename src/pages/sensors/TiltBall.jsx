@@ -15,7 +15,7 @@ const TiltBallSwitch = () => {
   const modelUrl = "/src/assets/models/27. TILT BALL SWITCH.gltf";
   const pdfUrl = "/src/assets/pdfs/tilt-sensor.pdf";
   const imageUrl = "/src/assets/images/0_Zw2YeCvUoiIJSmJ-.jpg";
-  const videoUrl = "/src/assets/videos/27. Tilt Ball Switch.mp4";
+  const videoUrl = "/src/assets/3D Video/Tilt Ball Switch.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

@@ -15,7 +15,7 @@ const HumiditySensor = () => {
   const modelUrl = "/src/assets/models/11. HUMID SENSOR.gltf";
   const pdfUrl = "/src/assets/pdfs/DHT11.pdf";
   const imageUrl = "/src/assets/images/DHT11.jpg.webp";
-  const videoUrl = "/src/assets/videos/11. Humidity Sensor.mp4";
+  const videoUrl = "/src/assets/3D Video/Humidity Sensor.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

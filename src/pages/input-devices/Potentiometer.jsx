@@ -15,7 +15,7 @@ const Potentiometer = () => {
   const modelUrl = "/src/assets/models/21. POTENTIOMETER.gltf";
   const pdfUrl = "/src/assets/pdfs/potentiometer.pdf";
   const imageUrl = "/src/assets/images/potentiometer.png";
-  const videoUrl = "/src/assets/videos/21. 10K Potentiometer.mp4";
+  const videoUrl = "/src/assets/3D Video/10K Potentiometer.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

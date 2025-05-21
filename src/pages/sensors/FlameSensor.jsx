@@ -15,7 +15,7 @@ const FlameSensor = () => {
   const modelUrl = "/src/assets/models/33. FLAME SENSOR.gltf";
   const pdfUrl = "/src/assets/pdfs/flame-sensor.pdf";
   const imageUrl = "/src/assets/images/5mm-flame-sensor.jpg";
-  const videoUrl = "/src/assets/videos/33. Flame Sensor.mp4";
+  const videoUrl = "/src/assets/3D Video/Flame Sensor.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

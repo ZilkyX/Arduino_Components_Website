@@ -10,7 +10,7 @@ const Model = ({ modelPath }) => {
 const RemoteControl = () => {
   const modelUrl = "/src/assets/models/20. REMOTE.gltf";
   const imageUrl = "/src/assets/images/IR-Remote.jpg";
-  const videoUrl = "/src/assets/videos/20. Remote.mp4";
+  const videoUrl = "/src/assets/3D Video/Remote.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

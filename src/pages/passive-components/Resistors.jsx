@@ -15,7 +15,7 @@ const Resistor = () => {
   const modelUrl = "/src/assets/models/32. RESISTORS.gltf";
   const pdfUrl = "/src/assets/pdfs/resistor.pdf";
   const imageUrl = "/src/assets/images/resistor.jpg";
-  const videoUrl = "src/assets/videos/32. Resistor.mp4";
+  const videoUrl = "/src/assets/3D Video/Resistor.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

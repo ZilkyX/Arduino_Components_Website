@@ -13,7 +13,7 @@ const Model = ({ modelPath }) => {
 
 const USBCable = () => {
   const modelUrl = "/src/assets/models/2. USB CABLE.gltf";
-  const pdfUrl = "/src/assets/pdfs/Usb-Cable.pdf";
+  const pdfUrl = "/src/assets/PDF/USB-CABLE.pdff";
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -70,7 +70,7 @@ const USBCable = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/3D Video\USB Cable.mp4"
+            src="/src/assets/3D Video/USB Cable.mp4"
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.

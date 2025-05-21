@@ -10,7 +10,7 @@ const Model = ({ modelPath }) => {
 const FMWires = () => {
   const modelUrl = "/src/assets/models/18. FM CABLES.gltf";
   const imageUrl = "/src/assets/images/fm-wires.jpeg";
-  const videoUrl = "/src/assets/videos/18. FM Cable.mp4";
+  const videoUrl = "/src/assets/PDF/FEMALE- MALE JUMPER WIRES.pdf";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

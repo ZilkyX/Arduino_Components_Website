@@ -15,7 +15,7 @@ const Battery = () => {
   const modelUrl = "/src/assets/models/30. BATTERY.gltf";
   const imageUrl = "/src/assets/images/battery.webp";
   const pdfUrl = "/src/assets/pdfs/lithium-bat.pdf";
-  const videoUrl = "/src/assets/videos/30. Battery.mp4";
+  const videoUrl = "/src/assets/3D Video/Battery.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

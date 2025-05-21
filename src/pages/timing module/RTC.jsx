@@ -15,7 +15,7 @@ const RTCModule = () => {
   const modelUrl = "/src/assets/models/9. RTC DS3231.gltf";
   const pdfUrl = "/src/assets/pdfs/RTC.pdf";
   const imageUrl = "/src/assets/images/RTC.jpeg";
-  const videoUrl = "/src/assets/videos/9. RTC MODULE.mp4";
+  const videoUrl = "/src/assets/3D Video/RTC Module.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

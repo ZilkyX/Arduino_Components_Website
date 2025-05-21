@@ -15,7 +15,7 @@ const Buzzer = () => {
   const modelUrl = "/src/assets/models/26. BUZZER.gltf";
   const pdfUrl = "/src/assets/pdfs/buzzer.pdf";
   const imageUrl = "/src/assets/images/AD319-2.webp";
-  const videoUrl = "/src/assets/videos/26. Buzzer.mp4";
+  const videoUrl = "/src/assets/3D Video/Buzzer.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

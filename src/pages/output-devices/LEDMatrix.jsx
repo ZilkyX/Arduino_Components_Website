@@ -12,10 +12,10 @@ const Model = ({ modelPath }) => {
 };
 
 const LedMatrix = () => {
-  const modelUrl = "/src/assets/models/24. MATRIX TUBE.gltf"; 
+  const modelUrl = "/src/assets/models/24. MATRIX TUBE.gltf";
   const pdfUrl = "/src/assets/pdfs/led-matrix-cube.pdf";
-  const imageUrl = "/src/assets/images/8x8-ledmatric-module-600x563.jpg"; 
-  const videoUrl = "/src/assets/videos/24. Matrix Tube.mp4";
+  const imageUrl = "/src/assets/images/8x8-ledmatric-module-600x563.jpg";
+  const videoUrl = "/src/assets/3D Video/Matrix Tube.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

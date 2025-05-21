@@ -15,7 +15,7 @@ const SoundSensor = () => {
   const modelUrl = "/src/assets/models/19. SOUND SENSOR.gltf";
   const pdfUrl = "/src/assets/pdfs/Sound-Sensor.pdf";
   const imageUrl = "/src/assets/images/sound-sensor-module-430x430.jpg";
-  const videoUrl = "/src/assets/videos/19. Sound Sensor.mp4";
+  const videoUrl = "/src/assets/3D Video/Sound Sensor.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

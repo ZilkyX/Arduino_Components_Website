@@ -10,7 +10,7 @@ const Model = ({ modelPath }) => {
 const JumperWires = () => {
   const modelUrl = "/src/assets/models/17. JUMPER WIRES.gltf";
   const imageUrl = "/src/assets/images/R2048241-01.webp";
-  const videoUrl = "/src/assets/videos/17. Jumper Wires.mp4";
+  const videoUrl = "/src/assets/PDF/JUMPER WIRE.pdf";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

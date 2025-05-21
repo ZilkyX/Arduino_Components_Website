@@ -15,7 +15,7 @@ const ShiftRegister74HC595 = () => {
   const modelUrl = "/src/assets/models/35. 74HC595.gltf";
   const pdfUrl = "/src/assets/pdfs/74hc595.pdf";
   const imageUrl = "/src/assets/images/nxp-74hc595.jpg";
-  const videoUrl = "/src/assets/videos/35. 74HC595.mp4";
+  const videoUrl = "/src/assets/3D Video/74HC595.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

@@ -71,7 +71,7 @@ const RC522 = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/videos/4. RC522.mp4"
+            src="/src/assets/3D Video/RC522.mp4"
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.

@@ -15,7 +15,7 @@ const OneDigitTube = () => {
   const modelUrl = "/src/assets/models/22. 1DIGIT TUBE.gltf";
   const pdfUrl = "/src/assets/pdfs/7 Segment Display Datasheet.pdf";
   const imageUrl = "/src/assets/images/images.jpg";
-  const videoUrl = "/src/assets/videos/22. 1 Digit 7 Segment.mp4";
+  const videoUrl = "/src/assets/3D Video/1 Digit 7 Segment.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);

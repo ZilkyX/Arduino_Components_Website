@@ -14,8 +14,8 @@ const Model = ({ modelPath }) => {
 const LED = () => {
   const modelUrl = "/src/assets/models/31. LED LIGHTS.gltf";
   const pdfUrl = "/src/assets/pdfs/led.pdf";
-  const videoUrl = "/src/assets/videos/31. LED.mp4"
-  
+  const videoUrl = "/src/assets/3D Video/LED.mp4";
+
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -70,7 +70,7 @@ const LED = () => {
           <video
             controls
             className="rounded-lg shadow-md w-full h-full"
-            src="/src/assets/videos/31. LED.mp4"
+            src={videoUrl}
             type="video/mp4"
           >
             Sorry, your browser doesn't support embedded videos.

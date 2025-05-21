@@ -15,7 +15,7 @@ const WaterLevelSensor = () => {
   const modelUrl = "/src/assets/models/10. WATER SENSOR.gltf";
   const pdfUrl = "/src/assets/pdfs/water level.pdf";
   const imageUrl = "/src/assets/images/Water-Level-Sensor.webp";
-  const videoUrl = "/src/assets/videos/10. Water Level.mp4";
+  const videoUrl = "/src/assets/3D Video/Water Level.mp4";
 
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
