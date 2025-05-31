@@ -12,7 +12,7 @@ const Model = ({ modelPath }) => {
 };
 
 const Arduino = () => {
-  const modelUrl = "/src/assets/models/1. ARDUINO UNO.gltf";
+  const modelUrl = "/public/models/1. ARDUINO UNO.gltf";
   const pdfUrl = "/src/assets/PDF/ARDUINO-UNO-MANUAL.pdf";
   const viewerRef = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
